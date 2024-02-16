@@ -12,7 +12,8 @@ body {
     background-position: center center;
     /* Hacer que la imagen se desplace con el contenido de la página */
     background-attachment: fixed;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Marker Felt, fantasy;
+    
 }
 
 .carousel-item img {
@@ -91,13 +92,13 @@ footer {
 
 
 
-.nav-item {
-    padding: 0 10px;
-}
+
 
 .nav-link {
-    color: #f3eeee;
+    color: #eef3f1;
     font-size: 28px;
+   /*  font-family: Marker Felt, fantasy; */
+   font-weight: 800;
 }
 
 
@@ -139,17 +140,19 @@ button span {
 .copyright {
 
     font-size: 35px;
-    background-color: rgb(242, 228, 172);
+    background-color: rgb(242, 228, 172, 65%);
     border-radius: 12px;
     padding: 2px;
     text-align: center;
     margin-top: 30px;
+
 
 }
 
 .copyright p {
     margin-top: 8px;
     color: rgb(21, 140, 187);
+    font-weight: bold;
 
 }
 
@@ -277,7 +280,7 @@ button span {
 .navbar-collapse {
     justify-content: center;
     /* Centra los elementos horizontalmente */
-    font-family: 'Times New Roman', Times, serif;
+   /*  font-family: 'Times New Roman', Times, serif; */
     /* Fuente */
     border-radius: 25px;
     /* Radio de borde */
@@ -287,7 +290,7 @@ button span {
 .navbar-nav .nav-link {
     color: #120404;
     /* Cambia el color del texto */
-    font-size: 35px;
+    font-size: 30px;
 }
 
 /* Estilos para los elementos del menú desplegable cuando están activos o en hover */
@@ -463,6 +466,26 @@ button span {
 
 /* Media query para pantallas pequeñas (por ejemplo, teléfonos móviles) */
 @media (max-width: 576px) {
+
+       /* Estilos para los elementos del menú desplegable */
+       .navbar-nav .nav-link {
+        color: #120404;
+        /* Cambia el color del texto */
+        font-size: 25px;
+        margin-left: 8px;
+        font-weight: 800;
+    }
+
+    button p{
+        margin: 2px;
+        font-weight: 800;
+        font-size: 28px;
+
+
+    }
+
+
+
     .localizacion .btn {
         font-size: 13px;
         /* Tamaño de fuente más pequeño */
@@ -470,10 +493,30 @@ button span {
 
     }
 
+    .copyright p{
+
+        font-size: 13px;
+        
+    }
+
+    .icons i{
+       margin: 0%;
+    }
+
+
+
 }
 
 /* Media query para pantallas medianas (por ejemplo, tabletas) */
 @media (min-width: 576px) and (max-width: 992px) {
+
+    /* Estilos para los elementos del menú desplegable */
+    .navbar-nav .nav-link {
+        color: #120404;
+        /* Cambia el color del texto */
+        font-size: 25px;
+    }
+
     .localizacion .btn {
         font-size: 24px;
         /* Tamaño de fuente mediano */
