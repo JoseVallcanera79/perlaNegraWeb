@@ -1,0 +1,501 @@
+/* Cambiar color y tamaño del texto para los enlaces en los dropdowns */
+
+
+body {
+    /* Establecer imagen de fondo */
+    background-image: url('../images/pasarela_mar.JPG');
+    /* Ajustar tamaño de la imagen al 100% del alto y ancho del body */
+    background-size: cover;
+    /* Repetir la imagen en caso de que el tamaño del body sea mayor que el de la imagen */
+    background-repeat: no-repeat;
+    /* Centrar la imagen horizontal y verticalmente */
+    background-position: center center;
+    /* Hacer que la imagen se desplace con el contenido de la página */
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.carousel-item img {
+    border-radius: 40px;
+}
+
+.icons {
+    color: rgb(26, 219, 219);
+    text-align: center;
+
+}
+
+.icons i {
+    font-size: 150px;
+    /* Ajustar el tamaño de los íconos */
+    margin: 0 auto;
+    /* Agregar espacio entre los íconos */
+    padding-right: 50px;
+    color: rgb(21, 140, 187);
+    text-align: center;
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.localizacion,
+.icons {
+    margin: 10px;
+    /* Añadir espacio entre los elementos del footer, puedes ajustar el valor según tus preferencias */
+}
+
+
+.localizacion {
+    text-align: center;
+    /* Centrar el contenido horizontalmente */
+    font-size: 40px;
+    /* Ajustar el tamaño del texto del botón */
+    padding: 10px 30px;
+    /* Ajustar el espacio interno del botón */
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.localizacion .btn {
+    display: inline-block;
+    /* Hacer que el botón se comporte como un elemento en línea */
+}
+
+
+
+.navbar {
+    background-color: rgb(154, 191, 212);
+    border-radius: 25px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(97, 184, 242);
+    border-radius: 20px;
+}
+
+
+.dropdown-menu.show {
+    border-radius: 10px;
+    /* Define el radio de borde para el menú desplegable */
+}
+
+
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #f3eeee;
+    font-size: 28px;
+}
+
+
+button span {
+    color: #121111;
+    /* Cambia el color a uno más claro */
+    border: none;
+}
+
+/* Estilos para el icono del navbar-toggler en formato móvil */
+.navbar-toggler {
+    width: 100%;
+    /* Hacer que el icono ocupe todo el ancho del navbar */
+    text-align: center;
+    /* Centrar el icono horizontalmente */
+
+
+}
+
+
+
+
+/* Estilos para el botón del navbar-toggler cuando está colapsado */
+.navbar-toggler[aria-expanded="false"] {
+    /* Agrega aquí los estilos que desees aplicar al botón cuando está colapsado */
+
+    background-color: rgb(97, 184, 242);
+}
+
+
+.navbar-toggler-icon {
+    color: #220a0a;
+    /* Cambia el color del ícono de la hamburguesa */
+    border: none;
+}
+
+
+
+.copyright {
+
+    font-size: 35px;
+    background-color: rgb(242, 228, 172);
+    border-radius: 12px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.copyright p {
+    margin-top: 8px;
+    color: rgb(21, 140, 187);
+
+}
+
+
+
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+
+.snip1566 {
+    position: relative;
+    display: inline-block;
+    margin-left: 39%;
+    margin-top: 90px;
+    max-width: 200px;
+    width: 100%;
+    color: #bbb;
+    font-size: 16px;
+    box-shadow: none !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+}
+
+.snip1566 *,
+.snip1566:before,
+.snip1566:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.snip1566:before,
+.snip1566:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    border: 6px solid #528ba3;
+    border-color: transparent #528ba3;
+}
+
+.snip1566 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.snip1566 figcaption {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    /*   background-image: url("/images/comollegar.png");
+ */
+    border-radius: 50%;
+}
+
+.snip1566 i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    z-index: 1;
+}
+
+.snip1566 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip1566:hover figcaption,
+.snip1566.hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.snip1566:hover:before,
+.snip1566.hover:before,
+.snip1566:hover:after,
+.snip1566.hover:after {
+    border-width: 10px;
+}
+
+.snip1566:hover:before,
+.snip1566.hover:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.snip1566:hover:after,
+.snip1566.hover:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para el menú desplegable del navbar */
+.navbar-collapse {
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    font-family: 'Times New Roman', Times, serif;
+    /* Fuente */
+    border-radius: 25px;
+    /* Radio de borde */
+}
+
+/* Estilos para los elementos del menú desplegable */
+.navbar-nav .nav-link {
+    color: #120404;
+    /* Cambia el color del texto */
+    font-size: 35px;
+}
+
+/* Estilos para los elementos del menú desplegable cuando están activos o en hover */
+.navbar-nav .nav-item,
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(129, 146, 221, 0.1);
+    /* Cambia el color de fondo al activo o al pasar el mouse */
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    /* Reducir el tamaño de los íconos para tablets */
+    .icons i {
+        font-size: 100px;
+        /* Tamaño de los íconos en tablets */
+        padding: 12px;
+
+    }
+
+    .snip1566 {
+        position: relative;
+        display: inline-block;
+        margin-left: 39%;
+        margin-top: 90px;
+        max-width: 150px;
+        width: 100%;
+        color: #bbb;
+        font-size: 16px;
+        box-shadow: none !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* Reducir el tamaño de los íconos para dispositivos pequeños */
+    .icons i {
+        font-size: 70px;
+        /* Tamaño de los íconos en dispositivos pequeños */
+        padding: 3px;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-right: 15px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        margin-top: 12px;
+
+    }
+
+    /* Estilos para snip1566 en dispositivos pequeños */
+    .snip1566 {
+        position: relative;
+        display: inline-block;
+        margin-left: 33%;
+        margin-top: 90px;
+        max-width: 110px;
+        width: 100%;
+        color: #bbb;
+        font-size: 16px;
+        box-shadow: none !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .snip1566 *,
+    .snip1566:before,
+    .snip1566:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    .snip1566:before,
+    .snip1566:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: -1;
+        border: 6px solid #528ba3;
+        border-color: transparent #528ba3;
+    }
+
+    .snip1566 img {
+        max-width: 100%;
+        backface-visibility: hidden;
+        vertical-align: top;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .snip1566 figcaption {
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+    .snip1566 i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 4em;
+        z-index: 1;
+    }
+
+    .snip1566 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .snip1566:hover figcaption,
+    .snip1566.hover figcaption {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .snip1566:hover:before,
+    .snip1566.hover:before,
+    .snip1566:hover:after,
+    .snip1566.hover:after {
+        border-width: 10px;
+    }
+
+    .snip1566:hover:before,
+    .snip1566.hover:before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .snip1566:hover:after,
+    .snip1566.hover:after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+
+.dropdown-menu a {
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+/* Media query para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 576px) {
+    .localizacion .btn {
+        font-size: 13px;
+        /* Tamaño de fuente más pequeño */
+        margin-top: 45px;
+
+    }
+
+}
+
+/* Media query para pantallas medianas (por ejemplo, tabletas) */
+@media (min-width: 576px) and (max-width: 992px) {
+    .localizacion .btn {
+        font-size: 24px;
+        /* Tamaño de fuente mediano */
+        margin-top: 55px;
+
+    }
+
+    .copyright {
+        font-size: 25px;
+    }
+
+
+
+
+}
+
+/* Media query para pantallas grandes (por ejemplo, laptops y escritorios) */
+@media (min-width: 992px) {
+    .localizacion .btn {
+        font-size: 30px;
+        /* Tamaño de fuente más grande */
+        margin-top: 55px;
+
+    }
+}
