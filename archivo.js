@@ -60,13 +60,14 @@ $(".hover").mouseleave(
 // });
 
 /*----MODAL-DESAYUNO----*/
+
 function modalDesayuno() {
   var modalIdsDesayuno = ["modalDesayuno1", "modalDesayuno2", "modalDesayuno3", "modalDesayuno4", "modalDesayuno5"];
 
-  // Obtener los enlaces de información de la página de tapas
+  // Obtener los enlaces de información de la página de desayuno
   var infoLinksDesayuno = document.querySelectorAll(".info-link-desayuno");
 
-  // Recorrer todos los enlaces de información de la página de tapas
+  // Recorrer todos los enlaces de información de la página de desayuno
   infoLinksDesayuno.forEach(function (infoLink, index) {
     var modalId = modalIdsDesayuno[index];
     var modalDesayunoEnlace = document.getElementById(modalId);
