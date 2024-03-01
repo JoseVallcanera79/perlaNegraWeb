@@ -1,4 +1,5 @@
 /* Cambiar color y tamaño del texto para los enlaces en los dropdowns */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 
 body {
@@ -13,7 +14,7 @@ body {
     /* Hacer que la imagen se desplace con el contenido de la página */
     background-attachment: fixed;
     font-family: Marker Felt, fantasy;
-    
+
 }
 
 .carousel-item img {
@@ -97,8 +98,8 @@ footer {
 .nav-link {
     color: #eef3f1;
     font-size: 28px;
-   /*  font-family: Marker Felt, fantasy; */
-   font-weight: 800;
+    /*  font-family: Marker Felt, fantasy; */
+    font-weight: 800;
 }
 
 
@@ -156,10 +157,6 @@ button span {
 
 }
 
-
-
-
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 
 
@@ -270,17 +267,11 @@ button span {
 
 
 
-
-
-
-
-
-
 /* Estilos para el menú desplegable del navbar */
 .navbar-collapse {
     justify-content: center;
     /* Centra los elementos horizontalmente */
-   /*  font-family: 'Times New Roman', Times, serif; */
+    /*  font-family: 'Times New Roman', Times, serif; */
     /* Fuente */
     border-radius: 25px;
     /* Radio de borde */
@@ -353,7 +344,7 @@ button span {
     .snip1566 {
         position: relative;
         display: inline-block;
-        margin-left: 33%;
+        margin-left: 34%;
         margin-top: 90px;
         max-width: 110px;
         width: 100%;
@@ -467,8 +458,8 @@ button span {
 /* Media query para pantallas pequeñas (por ejemplo, teléfonos móviles) */
 @media (max-width: 576px) {
 
-       /* Estilos para los elementos del menú desplegable */
-       .navbar-nav .nav-link {
+    /* Estilos para los elementos del menú desplegable */
+    .navbar-nav .nav-link {
         color: #120404;
         /* Cambia el color del texto */
         font-size: 25px;
@@ -476,7 +467,7 @@ button span {
         font-weight: 800;
     }
 
-    button p{
+    button p {
         margin: 2px;
         font-weight: 800;
         font-size: 28px;
@@ -493,14 +484,14 @@ button span {
 
     }
 
-    .copyright p{
+    .copyright p {
 
         font-size: 13px;
-        
+
     }
 
-    .icons i{
-       margin: 0%;
+    .icons i {
+        margin: 0%;
     }
 
 
@@ -510,11 +501,15 @@ button span {
 /* Media query para pantallas medianas (por ejemplo, tabletas) */
 @media (min-width: 576px) and (max-width: 992px) {
 
+    .navbar-nav{
+        width: 100%;
+    }
+
     /* Estilos para los elementos del menú desplegable */
     .navbar-nav .nav-link {
         color: #120404;
         /* Cambia el color del texto */
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .localizacion .btn {

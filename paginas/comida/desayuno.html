@@ -1,21 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!--aqui va el head-->
-<include src="/layout/head.html"></include>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">    <title>Perla Negra</title>
+    <!-- all.css loads all styles and icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="/paginas/css/comidas_css/desayuno.css">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- favicon web-->
+    <link rel="icon" type="image/x-icon" href="/images/icons/cocktail.png">
+    <!-- jQuery (es requerido por Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Opcional: Enlace al archivo JavaScript de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+
 
 <body class="body">
     <div class="container">
-        <include src="/layout/navbar.html">
+        <nav class="navbar navbar-expand-sm  navbar-expand-md navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--     <span class="navbar-toggler-icon"></span>  -->
+                    <p>Menu</p>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/paginas/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Para comer / To eat
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./comida/desayuno.html">Desayunos</a></li>
+                                <li><a class="dropdown-item" href="./comida/tapas_pizzas.html">Tapas, Pizzas,
+                                        Comidas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Para beber / To drink
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./bebidas/refrescos_granizados.html">Refrescos y
+                                        granizados</a></li>
+                                <li><a class="dropdown-item" href="./bebidas/cervezas.html">Cervezas</a></li>
+                                <li><a class="dropdown-item" href="./bebidas/licores_vinos.html">Licores y vinos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./bebidas/sangrias_espumosos.html">Sangrías y
+                                        espumosos</a></li>
+                                <li><a class="dropdown-item" href="./bebidas/cocteles_combinados.html">Cocteles y
+                                        combinados</a></li>
+                                <li><a class="dropdown-item" href="./bebidas/cafeteria.html">Cafetería</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Contenido de tu página omitido para la brevedad -->
-        <p>hola mundo</p>
-        <!-- Incluir el footer -->
-        <!-- Cambia la ruta de acuerdo a tu estructura de archivos -->
-        <!-- Puedes usar un servidor local o una ruta relativa -->
+        <div class="carta">
+            <div class="desayuno">
+                <h3>Desayunos</h3>
+            </div>
+            <div class="texto">
+                <p>Tostadas <a href="#" class="info-link">+info</a><span>3,50€</span></p>
+                <p>Tostadas con aceite y sal <a href="#" class="info-link">+info</a><span>3,00€</span></p>
+                <p>Croissant <a href="#" class="info-link">+info</a><span>3,50€</span></p>
+                <p>Brownie <a href="#" class="info-link">+info</a><span>6,00€</span></p>
+                <p>Gofre <a href="#" class="info-link">+info</a><span>5,50€</span></p>
+            </div>
+            <!-- Modal tostadas -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close"><button>OK</button></span>
+                    <p>Mantequilla / mermelada</p>
+                    <div class="image-container">
+                        <img src="/images/alergenos/gluten.png" alt="img1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/lacteos.png" alt="img2">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal tostadas aceite -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close"><button>OK</button></span>
+                    <p>Jamon serrano: +0,50€</p>
+                    <p>Aguacate: +0,50€</p>
+                    <p>Pollo marinado: +0,50€</p>
+                    <div class="image-container">
+                        <img src="/images/alergenos/gluten.png" alt="img1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/lacteos.png" alt="img2">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal croisant -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close"><button>OK</button></span>
+                    <p>Mermelada</p>
+                    <div class="image-container">
+                        <img src="/images/alergenos/gluten.png" alt="img1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/lacteos.png" alt="img2">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal brownie -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close"><button>OK</button></span>
+                    <p>Brownie</p>
+                    <div class="image-container">
+                        <img src="/images/alergenos/gluten.png" alt="img1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/lacteos.png" alt="img2">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/soja.png" alt="img2">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/sesamo.png" alt="img2">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal gofre -->
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close"><button>OK</button></span>
+                    <p>Mermelada, Fresa, Chocolate<br> o Nata</p>
+                    <div class="image-container">
+                        <img src="/images/alergenos/gluten.png" alt="img1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/alergenos/lacteos.png" alt="img2">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="alergenos">
+            <h5>Alérgenos</h5>
+            <div><img src="/images/alergenos/gluten.png"></div>
+            <div><img src="/images/alergenos/crustaceos.png"></div>
+            <div><img src="/images/alergenos/huevos.png"></div>
+            <div><img src="/images/alergenos/pescado.png"></div>
+            <div><img src="/images/alergenos/cacahuete.png"></div>
+            <div><img src="/images/alergenos/soja.png"></div>
+            <div><img src="/images/alergenos/lacteos.png"></div>
+            <div><img src="/images/alergenos/frutos_cascara.png"></div>
+            <div><img src="/images/alergenos/apio.png"></div>
+            <div><img src="/images/alergenos/mostaza.png"></div>
+            <div><img src="/images/alergenos/sesamo.png"></div>
+            <div><img src="/images/alergenos/azufre.png"></div>
+            <div><img src="/images/alergenos/altramuces.png"></div>
+            <div><img src="/images/alergenos/moluscos.png"></div>
+
+        </div>
 
 
-        <!--aqui va el footer-->
+        <div id="footer-container"></div>
     </div>
+
+    <script>
+        // Cargar dinámicamente el contenido del footer
+        fetch('/layout/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error al cargar el footer:', error);
+            });
+    </script>
+    <!-- Aquí van tus otros elementos HTML -->
+    <script src="/archivo.js"></script>
+</body>
+
+</html>
+
+
 </body>
 
 </html>
