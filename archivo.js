@@ -1,60 +1,157 @@
 /* al seleccionar el icono del mapa */
 
 $(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
+
+// /* FUNCION MODAL-DESAYUNO*/
+
+// function modalDesayuno() {
+//   var modalIdsDesayuno = ["modalDesayuno1", "modalDesayuno2", "modalDesayuno3", "modalDesayuno4", "modalDesayuno5"];
+//   var modalsDesayuno = [];
+
+//   modalIdsDesayuno.forEach(function(id) {
+//       var modalDesayuno = document.getElementById(id);
+//       if (modalDesayuno) {
+//           modalsDesayuno.push(modalDesayuno);
+//       } else {
+//           console.error("No se pudo encontrar el elemento con el ID: " + id);
+//       }
+//   });
+
+//   // Obtener los enlaces de información de la página de desayunos
+//   var infoLinksDesayuno = document.querySelectorAll(".info-link-desayuno");
+
+//   // Recorrer todos los enlaces de información de la página de desayunos
+//   infoLinksDesayuno.forEach(function(infoLink, index) {
+//       // Obtener el modal correspondiente al índice actual
+//       var modalDesayunoEnlace = document.getElementById("modalDesayuno" + (index + 1));
+
+//       // Cuando se hace clic en el enlace de información, mostrar el modal correspondiente
+//       infoLink.onclick = function() {
+//           if (modalDesayunoEnlace) {
+//               modalDesayunoEnlace.style.display = "block";
+//           }
+//       }
+
+//       // Obtener el botón de cierre del modal correspondiente
+//       var closeButton = modalDesayunoEnlace.querySelector(".close button");
+
+//       // Cuando se hace clic en el botón de cierre, ocultar el modal
+//       closeButton.addEventListener("click", function() {
+//           modalDesayunoEnlace.style.display = "none";
+//       });
+//   });
+
+//   // Cuando el usuario hace clic fuera de cualquier modal, también ocultarlo
+//   window.addEventListener('click', function(event) {
+//       if (event.target.classList.contains('modal-desayuno')) {
+//           event.target.style.display = "none";
+//       }
+//   });
+// }
+
+// // Llamar a la función modalDesayuno después de que el DOM haya cargado
+// document.addEventListener("DOMContentLoaded", function() {
+//   modalDesayuno();
+// });
+
+/*----MODAL-DESAYUNO----*/
+function modalDesayuno() {
+  var modalIdsDesayuno = ["modalDesayuno1", "modalDesayuno2", "modalDesayuno3", "modalDesayuno4", "modalDesayuno5"];
+
+  // Obtener los enlaces de información de la página de tapas
+  var infoLinksDesayuno = document.querySelectorAll(".info-link-desayuno");
+
+  // Recorrer todos los enlaces de información de la página de tapas
+  infoLinksDesayuno.forEach(function (infoLink, index) {
+    var modalId = modalIdsDesayuno[index];
+    var modalDesayunoEnlace = document.getElementById(modalId);
+
+    if (!modalDesayunoEnlace) {
+      console.error("No se pudo encontrar el elemento con el ID: " + modalId);
+      return; // Salir del ciclo si no se encuentra el modal
     }
-  );
-
-
-  /* FUNCION MODAL*/
-  var modalIds = ["modal1", "modal2", "modal3", "modal4", "modal5"];
-  var modals = [];
-  
-  modalIds.forEach(function(id) {
-      var modal = document.getElementById(id);
-      if (modal) {
-          modals.push(modal);
-      } else {
-          console.error("No se pudo encontrar el elemento con el ID: " + id);
-      }
-  });
-  
-// Obtener los enlaces de información
-var infoLinks = document.querySelectorAll(".info-link");
-
-// Obtener los elementos de cierre de los modales
-var spanCloses = document.querySelectorAll(".modal .close button");
-
-// Recorrer todos los enlaces de información
-infoLinks.forEach(function(infoLink, index) {
-    // Obtener el modal correspondiente al índice actual
-    var modal = document.getElementById("modal" + (index + 1));
 
     // Cuando se hace clic en el enlace de información, mostrar el modal correspondiente
-    infoLink.onclick = function() {
-        if (modal) {
-            modal.style.display = "block";
-        }
-    }
+    infoLink.onclick = function () {
+      modalDesayunoEnlace.style.display = "block";
+    };
 
-    // Cuando se hace clic en el botón de cierre del modal, ocultar el modal correspondiente
-    if (spanCloses[index]) {
-        spanCloses[index].onclick = function() {
-            if (modal) {
-                modal.style.display = "none";
-            }
-        }
-    }
-});
+    // Obtener el botón de cierre del modal correspondiente
+    var closeButton = modalDesayunoEnlace.querySelector(".close button");
 
-// Cuando el usuario hace clic fuera de cualquier modal, también ocultarlo
-window.onclick = function(event) {
-    modals.forEach(function(modal) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+    // Cuando se hace clic en el botón de cierre, ocultar el modal
+    closeButton.addEventListener("click", function () {
+      modalDesayunoEnlace.style.display = "none";
     });
+  });
+
+  // Cuando el usuario hace clic fuera de cualquier modal, también ocultarlo
+  window.addEventListener('click', function (event) {
+    if (event.target.classList.contains('modal-desayuno')) {
+      event.target.style.display = "none";
+    }
+  });
 }
 
+// Llamar a la función modalsTapas después de que el DOM haya cargado
+document.addEventListener("DOMContentLoaded", function () {
+  modalDesayuno();
+});
 
+
+
+
+
+
+
+
+
+/* FUNCION MODAL-TAPAS */
+function modalsTapas() {
+  var modalIdsTapas = ["modal6", "modal7", "modal8", "modal9", "modal10", "modal11", "modal12", "modal13", "modal14",
+    "modal15", "modal16", "modal17", "modal18", "modal19", "modal20", "modal21", "modal22"];
+
+  // Obtener los enlaces de información de la página de tapas
+  var infoLinksTapas = document.querySelectorAll(".info-link-tapas");
+
+  // Recorrer todos los enlaces de información de la página de tapas
+  infoLinksTapas.forEach(function (infoLink, index) {
+    var modalId = modalIdsTapas[index];
+    var modalTapasEnlace = document.getElementById(modalId);
+
+    if (!modalTapasEnlace) {
+      console.error("No se pudo encontrar el elemento con el ID: " + modalId);
+      return; // Salir del ciclo si no se encuentra el modal
+    }
+
+    // Cuando se hace clic en el enlace de información, mostrar el modal correspondiente
+    infoLink.onclick = function () {
+      modalTapasEnlace.style.display = "block";
+    };
+
+    // Obtener el botón de cierre del modal correspondiente
+    var closeButton = modalTapasEnlace.querySelector(".close button");
+
+    // Cuando se hace clic en el botón de cierre, ocultar el modal
+    closeButton.addEventListener("click", function () {
+      modalTapasEnlace.style.display = "none";
+    });
+  });
+
+  // Cuando el usuario hace clic fuera de cualquier modal, también ocultarlo
+  window.addEventListener('click', function (event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+    }
+  });
+}
+
+// Llamar a la función modalsTapas después de que el DOM haya cargado
+document.addEventListener("DOMContentLoaded", function () {
+  modalsTapas();
+});
