@@ -24,7 +24,7 @@
 <body class="body">
     <div class="container">
         <nav class="navbar navbar-expand-sm  navbar-expand-md navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <!--     <span class="navbar-toggler-icon"></span>  -->
@@ -52,17 +52,20 @@
                                 Para beber / To drink
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./bebidas/refrescos_granizados.html">Refrescos y
+                                <li><a class="dropdown-item" href="/paginas/bebidas/refrescos_granizados.html">Refrescos y
                                         granizados</a></li>
-                                <li><a class="dropdown-item" href="./bebidas/cervezas.html">Cervezas</a></li>
-                                <li><a class="dropdown-item" href="./bebidas/licores_vinos.html">Licores y vinos</a>
+                                <li><a class="dropdown-item" href="/paginas/bebidas/cervezas.html">Cervezas</a></li>
+                                <li><a class="dropdown-item" href="/paginas/bebidas/licores_vinos.html">Licores y vinos</a>
                                 </li>
-                                <li><a class="dropdown-item" href="./bebidas/sangrias_espumosos.html">Sangrías y
+                                <li><a class="dropdown-item" href="/paginas/bebidas/sangrias_espumosos.html">Sangrías y
                                         espumosos</a></li>
-                                <li><a class="dropdown-item" href="./bebidas/cocteles_combinados.html">Cocteles y
+                                <li><a class="dropdown-item" href="/paginas/bebidas/cocteles_combinados.html">Cocteles y
                                         combinados</a></li>
-                                <li><a class="dropdown-item" href="./bebidas/cafeteria.html">Cafetería</a></li>
+                                <li><a class="dropdown-item" href="/paginas/bebidas/cafeteria.html">Cafetería</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./">Vapeador</a>
                         </li>
                     </ul>
                 </div>
@@ -179,18 +182,7 @@
         <div id="footer-container"></div>
     </div>
 
-    <script>
-        // Cargar dinámicamente el contenido del footer
-        fetch('/layout/footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footer-container').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error al cargar el footer:', error);
-            });
-    </script>
-    <!-- Aquí van tus otros elementos HTML -->
+   
     <script src="/archivo.js"></script>
 </body>
 

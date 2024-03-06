@@ -1,0 +1,926 @@
+/* Cambiar color y tamaño del texto para los enlaces en los dropdowns */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+body {
+    /* Establecer imagen de fondo */
+    background-image: url('/images/pasarela_bar.JPG');
+    /* Ajustar tamaño de la imagen al 100% del alto y ancho del body */
+    background-size: cover;
+    /* Repetir la imagen en caso de que el tamaño del body sea mayor que el de la imagen */
+    background-repeat: no-repeat;
+    /* Centrar la imagen horizontal y verticalmente */
+    background-position: center center;
+    /* Hacer que la imagen se desplace con el contenido de la página */
+    background-attachment: fixed;
+
+    font-family: Marker Felt, fantasy;
+
+}
+
+.carta {
+    background-color: rgb(242, 228, 172, 65%);
+    border-radius: 40px;
+    ;
+}
+
+.desayuno {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    margin: 30px auto 0;
+    /* Margen superior e inferior automático, centrando horizontalmente */
+    max-width: 50%;
+    /* Establecer un ancho máximo en lugar de fijo */
+
+
+}
+
+
+
+.desayuno h3 {
+    margin-top: 6px;
+    font-family: Marker;
+    margin: 0;
+    text-align: center;
+    /* Asegurarse de que el texto esté centrado */
+    font-weight: 400;
+
+}
+
+.vinos {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    margin-top: 30px;
+}
+
+
+
+.vinos h4 {
+
+    background-color: white;
+    border-radius: 40px;
+    width: 20%;
+    margin: 60px;
+    font-family: Marker;
+    text-align: center;
+    /* Asegurarse de que el texto esté centrado */
+    font-weight: 200;
+
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    /* Alinea los elementos verticalmente */
+    margin-top: 30px;
+}
+
+.texto h3 {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    margin: 30px auto 0;
+    /* Margen superior e inferior automático, centrando horizontalmente */
+    text-align: center;
+    width: 50%;
+    /* Establecer un ancho máximo en lugar de fijo */
+    margin-bottom: 45px;
+
+}
+
+.texto p {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre el texto y el precio */
+    align-items: center;
+    /* Centra verticalmente el texto y el precio */
+    padding: 8px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.texto p span {
+    margin-left: 10px;
+    /* Ajusta el margen izquierdo según sea necesario */
+    color: #555;
+    /* Cambia el color del precio si lo deseas */
+    font-weight: bold;
+    /* Opcional: hacer el precio en negrita */
+}
+
+.comentario{
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    margin: -1em 2px 20px 20px;
+ 
+}
+
+
+
+.icons {
+    color: rgb(26, 219, 219);
+    text-align: center;
+
+}
+
+.icons i {
+    font-size: 150px;
+    /* Ajustar el tamaño de los íconos */
+    margin: 0 auto;
+    /* Agregar espacio entre los íconos */
+    padding-right: 50px;
+    color: rgb(21, 140, 187);
+    text-align: center;
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.localizacion,
+.icons {
+    margin: 10px;
+    /* Añadir espacio entre los elementos del footer, puedes ajustar el valor según tus preferencias */
+}
+
+
+.localizacion {
+    text-align: center;
+    /* Centrar el contenido horizontalmente */
+    font-size: 40px;
+    /* Ajustar el tamaño del texto del botón */
+    padding: 10px 30px;
+    /* Ajustar el espacio interno del botón */
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.localizacion .btn {
+    display: inline-block;
+    /* Hacer que el botón se comporte como un elemento en línea */
+}
+
+
+
+.navbar {
+    background-color: rgb(154, 191, 212);
+    border-radius: 25px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(97, 184, 242);
+    border-radius: 20px;
+}
+
+
+.dropdown-menu.show {
+    border-radius: 10px;
+    /* Define el radio de borde para el menú desplegable */
+}
+
+
+
+
+
+.nav-link {
+    color: #eef3f1;
+    font-size: 28px;
+    /*  font-family: Marker Felt, fantasy; */
+    font-weight: 800;
+}
+
+
+
+
+/* Estilos para el icono del navbar-toggler en formato móvil */
+.navbar-toggler {
+    width: 100%;
+    /* Hacer que el icono ocupe todo el ancho del navbar */
+    text-align: center;
+    /* Centrar el icono horizontalmente */
+
+
+}
+
+
+
+
+/* Estilos para el botón del navbar-toggler cuando está colapsado */
+.navbar-toggler[aria-expanded="false"] {
+    /* Agrega aquí los estilos que desees aplicar al botón cuando está colapsado */
+
+    background-color: rgb(97, 184, 242);
+}
+
+
+.navbar-toggler-icon {
+    color: #220a0a;
+    /* Cambia el color del ícono de la hamburguesa */
+    border: none;
+}
+
+
+
+.copyright {
+
+    font-size: 35px;
+    background-color: rgb(242, 228, 172, 65%);
+    border-radius: 12px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+
+.copyright p {
+    margin-top: 8px;
+    color: rgb(21, 140, 187);
+    font-weight: bold;
+
+}
+
+
+.snip1566 {
+    position: relative;
+    display: inline-block;
+    margin-left: 39%;
+    margin-top: 90px;
+    max-width: 200px;
+    width: 100%;
+    color: #bbb;
+    font-size: 16px;
+    box-shadow: none !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+}
+
+.snip1566 *,
+.snip1566:before,
+.snip1566:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.snip1566:before,
+.snip1566:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    border: 6px solid #528ba3;
+    border-color: transparent #528ba3;
+}
+
+.snip1566 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.snip1566 figcaption {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    /*   background-image: url("/images/comollegar.png");
+ */
+    border-radius: 50%;
+}
+
+.snip1566 i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    z-index: 1;
+}
+
+.snip1566 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip1566:hover figcaption,
+.snip1566.hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.snip1566:hover:before,
+.snip1566.hover:before,
+.snip1566:hover:after,
+.snip1566.hover:after {
+    border-width: 10px;
+}
+
+.snip1566:hover:before,
+.snip1566.hover:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.snip1566:hover:after,
+.snip1566.hover:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+/* Estilos para el menú desplegable del navbar */
+.navbar-collapse {
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    /*  font-family: 'Times New Roman', Times, serif; */
+    /* Fuente */
+    border-radius: 25px;
+    /* Radio de borde */
+}
+
+/* Estilos para los elementos del menú desplegable */
+.navbar-nav .nav-link {
+    color: #120404;
+    /* Cambia el color del texto */
+    font-size: 30px;
+}
+
+/* Estilos para los elementos del menú desplegable cuando están activos o en hover */
+.navbar-nav .nav-item,
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(129, 146, 221, 0.1);
+    /* Cambia el color de fondo al activo o al pasar el mouse */
+}
+
+
+
+
+/* Reducir el tamaño TABLETS */
+
+@media (max-width: 992px) {
+    
+    .navbar-nav{
+        flex-wrap: wrap;
+    }
+  
+    .nav-item{
+        margin: 0px ;
+    }
+
+
+    .icons i {
+        font-size: 100px;
+        /* Tamaño de los íconos en tablets */
+        padding: 12px;
+    }
+
+
+
+
+    .snip1566 {
+        position: relative;
+        display: inline-block;
+        margin-left: 39%;
+        margin-top: 90px;
+        max-width: 150px;
+        width: 100%;
+        color: #bbb;
+        font-size: 16px;
+        box-shadow: none !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+}
+
+/* Tamaño de los íconos en movil */
+@media (max-width: 767px) {
+    .carta {
+        background-color: rgb(242, 228, 172, 65%);
+        border-radius: 40px;
+
+    }
+
+    .desayuno {
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 40px;
+        margin: 30px auto 0;
+        /* Margen superior e inferior automático, centrando horizontalmente */
+        max-width: 60%;
+        /* Establecer un ancho máximo en lugar de fijo */
+
+
+    }
+
+
+
+    .desayuno h3 {
+        margin-top: 6px;
+        font-family: Marker;
+        margin: 20px;
+        text-align: center;
+        /* Asegurarse de que el texto esté centrado */
+        font-weight: 400;
+
+    }
+    .vinos {
+        display: flex;
+        justify-content: center;
+        /* Centrar horizontalmente */
+        align-items: center;
+        /* Centrar verticalmente */
+        margin-top: 30px;
+    }
+    
+    
+    
+    .vinos h4 {
+    
+        background-color: white;
+        border-radius: 40px;
+        width: 45%;
+        margin-top: 60px;
+        font-family: Marker;
+        text-align: center;
+        /* Asegurarse de que el texto esté centrado */
+        font-weight: 200;
+    
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente */
+        margin-top: 30px;
+    }
+
+    .texto p {
+        display: flex;
+        justify-content: space-between;
+        /* Espacio entre el texto y el precio */
+        align-items: center;
+        /* Centra verticalmente el texto y el precio */
+        padding: 0px 10px 0px 10px;
+        font-family: cursive;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+    .texto p span {
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo según sea necesario */
+        color: #555;
+        /* Cambia el color del precio si lo deseas */
+        font-weight: bold;
+        /* Opcional: hacer el precio en negrita */
+    }
+
+
+    .comentario{
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+        margin: -1em 2px 20px 20px;
+     
+    }
+
+
+
+    /* Reducir el tamaño de los íconos para dispositivos pequeños */
+    .icons i {
+        font-size: 70px;
+        /* Tamaño de los íconos en dispositivos pequeños */
+        padding: 3px;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-right: 15px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        margin-top: 12px;
+
+    }
+
+    /* Estilos para snip1566 en dispositivos pequeños */
+    .snip1566 {
+        position: relative;
+        display: inline-block;
+        margin-left: 120%;
+        margin-top: 90px;
+        max-width: 110px;
+        width: 100%;
+        color: #bbb;
+        font-size: 16px;
+        box-shadow: none !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+
+    .snip1566 *,
+    .snip1566:before,
+    .snip1566:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    .snip1566:before,
+    .snip1566:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: -1;
+        border: 6px solid #528ba3;
+        border-color: transparent #528ba3;
+    }
+
+    .snip1566 img {
+        max-width: 100%;
+        backface-visibility: hidden;
+        vertical-align: top;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .snip1566 figcaption {
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+    .snip1566 i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 4em;
+        z-index: -1;
+    }
+
+    .snip1566 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .snip1566:hover figcaption,
+    .snip1566.hover figcaption {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .snip1566:hover:before,
+    .snip1566.hover:before,
+    .snip1566:hover:after,
+    .snip1566.hover:after {
+        border-width: 10px;
+    }
+
+    .snip1566:hover:before,
+    .snip1566.hover:before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .snip1566:hover:after,
+    .snip1566.hover:after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+
+.dropdown-menu a {
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+/* Media query MOVIL---------- */
+@media (max-width: 576px) {
+
+    /* Estilos para los elementos del menú desplegable */
+    .navbar-nav .nav-link {
+        color: #120404;
+        /* Cambia el color del texto */
+        font-size: 25px;
+        margin-left: 8px;
+        font-weight: 800;
+    }
+
+    button p {
+        margin: 2px;
+        font-weight: 800;
+        font-size: 28px;
+
+
+    }
+
+
+    .localizacion .btn {
+        font-size: 13px;
+        /* Tamaño de fuente más pequeño */
+        margin-top: 45px;
+
+
+    }
+
+    .snip1566 {
+        margin-left: 120px;
+        /* Puedes ajustar este valor según sea necesario */
+    }
+
+
+    .copyright p {
+
+        font-size: 13px;
+
+    }
+
+    .icons i {
+        margin: 0%;
+    }
+
+
+
+}
+
+/* Media query para TABLETS */
+
+@media (min-width: 576px) {
+
+    /* Estilos para los elementos del menú desplegable */
+    .navbar-nav .nav-link {
+        color: #120404;
+        /* Cambia el color del texto */
+        font-size: 25px;
+    }
+
+    .carta {
+        background-color: rgb(242, 228, 172, 65%);
+        border-radius: 40px;
+        ;
+    }
+
+    .desayuno {
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 40px;
+        margin: 30px auto 0;
+        /* Margen superior e inferior automático, centrando horizontalmente */
+        max-width: 40%;
+        /* Establecer un ancho máximo en lugar de fijo */
+
+
+    }
+
+
+
+    .desayuno h3 {
+        margin-top: 6px;
+        font-family: Marker;
+        margin: 0;
+        text-align: center;
+        /* Asegurarse de que el texto esté centrado */
+        font-weight: 400;
+    }
+
+    .vinos {
+        display: flex;
+        justify-content: center;
+        /* Centrar horizontalmente */
+        align-items: center;
+        /* Centrar verticalmente */
+        margin-top: 30px;
+    }
+    
+    
+    
+    .vinos h4 {
+    
+        background-color: white;
+        border-radius: 40px;
+        width: 30%;
+        margin-top: 60px;
+        font-family: Marker;
+        text-align: center;
+        /* Asegurarse de que el texto esté centrado */
+        font-weight: 200;
+    
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente */
+        margin-top: 30px;
+    }
+
+    .texto p {
+        display: flex;
+        justify-content: space-between;
+        /* Espacio entre el texto y el precio */
+        align-items: center;
+        /* Centra verticalmente el texto y el precio */
+        padding: 8px;
+        font-family: cursive;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .texto p span {
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo según sea necesario */
+        color: #555;
+        /* Cambia el color del precio si lo deseas */
+        font-weight: bold;
+        /* Opcional: hacer el precio en negrita */
+    }
+
+    .comentario{
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+        margin: -1em 2px 20px 20px;
+     
+    }
+
+
+
+
+    .localizacion .btn {
+        font-size: 24px;
+        /* Tamaño de fuente mediano */
+        margin-top: 55px;
+
+    }
+
+    .copyright {
+        font-size: 25px;
+    }
+
+
+
+
+}
+
+/* Media query LAPTOPS Y ESCRITORIOS */
+
+
+
+@media (min-width: 1024px) {
+
+
+    .navbar-nav{
+
+      width: 100%;
+    }
+    .nav-item{
+     margin: 0px 30px;
+    }
+
+
+    .localizacion .btn {
+        font-size: 30px;
+        /* Tamaño de fuente más grande */
+        margin-top: 55px;
+
+    }
+
+    .carta {
+        background-color: rgb(242, 228, 172, 65%);
+        border-radius: 40px;
+        ;
+    }
+
+    .desayuno {
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 40px;
+        margin: 30px auto 0;
+        /* Margen superior e inferior automático, centrando horizontalmente */
+        max-width: 40%;
+        /* Establecer un ancho máximo en lugar de fijo */
+
+
+    }
+
+
+
+    .desayuno h3 {
+        font-size: 30px;
+        margin-top: 6px;
+        font-family: Marker;
+        margin: 0;
+        text-align: center;
+        /* Asegurarse de que el texto esté centrado */
+        font-weight: 400;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente */
+        margin-top: 30px;
+    }
+
+    .texto p {
+        display: flex;
+        justify-content: space-between;
+        /* Espacio entre el texto y el precio */
+        align-items: center;
+        /* Centra verticalmente el texto y el precio */
+        padding: 8px;
+        font-family: cursive;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .info-link {
+        margin-left: 1px;
+    }
+
+    .texto p span {
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo según sea necesario */
+        color: #555;
+        /* Cambia el color del precio si lo deseas */
+        font-weight: bold;
+        /* Opcional: hacer el precio en negrita */
+    }
+
+    .comentario{
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+        margin: -1em 2px 20px 20px;
+     
+    }
+
+
+
+}

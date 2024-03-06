@@ -79,12 +79,16 @@ footer {
 }
 
 .navbar-nav {
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(97, 184, 242);
     border-radius: 20px;
 }
 
+.nav-item{
+    margin: 0px 20px;
+   }
 
 .dropdown-menu.show {
     border-radius: 10px;
@@ -295,8 +299,13 @@ button span {
 
 
 
-
+/* Reducir el tamaño TABLETS */
 @media (max-width: 992px) {
+
+    .navbar-nav{
+        flex-wrap: wrap;
+    }
+ 
 
     /* Reducir el tamaño de los íconos para tablets */
     .icons i {

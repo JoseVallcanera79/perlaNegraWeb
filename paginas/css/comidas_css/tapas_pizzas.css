@@ -411,6 +411,15 @@ footer {
 @media (max-width: 992px) {
 
 
+
+    .navbar-nav{
+        flex-wrap: wrap;
+    }
+      .nav-item{
+       margin: 0px 10px;
+      }
+
+
     .icons i {
         font-size: 100px;
         /* Tamaño de los íconos en tablets */
@@ -869,6 +878,8 @@ footer {
 
 @media (min-width: 576px) {
 
+ 
+
     /* Estilos para los elementos del menú desplegable */
     .navbar-nav .nav-link {
         color: #120404;
@@ -1012,6 +1023,17 @@ footer {
 
 
 @media (min-width: 1024px) {
+
+
+
+    .navbar-nav{
+
+        width: 100%;
+      }
+      .nav-item{
+       margin: 0px 30px;
+      }
+
     .localizacion .btn {
         font-size: 30px;
         /* Tamaño de fuente más grande */

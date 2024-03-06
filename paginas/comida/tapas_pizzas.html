@@ -53,7 +53,7 @@
                                 Para beber / To drink
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./bebidas/refrescos_granizados.html">Refrescos y
+                                <li><a class="dropdown-item" href="/paginas/bebidas/refrescos_granizados.html">Refrescos y
                                         granizados</a></li>
                                 <li><a class="dropdown-item" href="./bebidas/cervezas.html">Cervezas</a></li>
                                 <li><a class="dropdown-item" href="./bebidas/licores_vinos.html">Licores y vinos</a>
@@ -64,6 +64,9 @@
                                         combinados</a></li>
                                 <li><a class="dropdown-item" href="./bebidas/cafeteria.html">Cafetería</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./">Vapeador</a>
                         </li>
                     </ul>
                 </div>
@@ -355,17 +358,7 @@
         <div id="footer-container"></div>
     </div>
 
-    <script>
-        // Cargar dinámicamente el contenido del footer
-        fetch('/layout/footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footer-container').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error al cargar el footer:', error);
-            });
-    </script>
+ 
     <script src="/archivo.js"></script>
 
 </body>
