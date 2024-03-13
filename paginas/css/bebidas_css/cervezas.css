@@ -4,7 +4,7 @@
 
 body {
     /* Establecer imagen de fondo */
-    background-image: url('/images/pasarela_bar.JPG');
+    background-image: url('/images/pasarela_bar.webp');
     /* Ajustar tamaño de la imagen al 100% del alto y ancho del body */
     background-size: cover;
     /* Repetir la imagen en caso de que el tamaño del body sea mayor que el de la imagen */
