@@ -860,10 +860,15 @@ footer {
     }
 
 
+    .copyright {
+        font-size: 20px; /* Reducir aún más el tamaño del texto para dispositivos móviles */
+        max-width: 100%; /* Reducir el ancho máximo del contenedor */
+        margin: auto; /* Centrar el contenedor */
+    }
+
     .copyright p {
-
-        font-size: 13px;
-
+        font-size: 9px; /* Reducir el tamaño del texto para dispositivos móviles */
+        white-space: inherit;
     }
 
     .icons i {
@@ -873,151 +878,6 @@ footer {
 
 
 }
-
-/* Media query para TABLETS */
-
-@media (min-width: 576px) {
-
- 
-
-    /* Estilos para los elementos del menú desplegable */
-    .navbar-nav .nav-link {
-        color: #120404;
-        /* Cambia el color del texto */
-        font-size: 25px;
-    }
-
-    .carta {
-        background-color: rgb(242, 228, 172, 65%);
-        border-radius: 40px;
-        ;
-    }
-
-    .desayuno {
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        border-radius: 40px;
-        margin: 30px auto 0;
-        /* Margen superior e inferior automático, centrando horizontalmente */
-        max-width: 50%;
-        /* Establecer un ancho máximo en lugar de fijo */
-
-
-    }
-
-
-
-    .desayuno h3 {
-        margin-top: 6px;
-        font-family: Marker;
-        margin: 0;
-        text-align: center;
-        /* Asegurarse de que el texto esté centrado */
-        font-weight: 400;
-    }
-
-    .texto {
-        display: flex;
-        flex-direction: column;
-        /* Alinea los elementos verticalmente */
-        margin-top: 30px;
-    }
-
-    .texto p {
-        display: flex;
-        justify-content: space-between;
-        /* Espacio entre el texto y el precio */
-        align-items: center;
-        /* Centra verticalmente el texto y el precio */
-        padding: 8px;
-        font-family: cursive;
-        font-size: 25px;
-        font-weight: 700;
-    }
-
-    .texto p span {
-        margin-left: 10px;
-        /* Ajusta el margen izquierdo según sea necesario */
-        color: #555;
-        /* Cambia el color del precio si lo deseas */
-        font-weight: bold;
-        /* Opcional: hacer el precio en negrita */
-    }
-
-
-    .modal-content {
-        font-family: cursive;
-        font-size: 28px;
-        font-weight: bold;
-        margin: 65% auto;
-        /* Centrar vertical y horizontalmente */
-        padding: 20px;
-        max-width: 350px;
-        border-radius: 40px;
-    }
-
-
-
-    .alergenos {
-        text-align: center;
-        background-color: rgb(255, 255, 255, 0.50);
-        border-radius: 40px;
-        padding: 8px;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(77px, 1fr));
-        /* Define las columnas del grid */
-        gap: 10px;
-        /* Espacio entre las imágenes */
-    }
-
-
-
-    .alergenos div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 8px;
-        /* Bordes redondeados para cada imagen (opcional) */
-        overflow: hidden;
-        /* Para recortar cualquier contenido que sobresalga */
-    }
-
-    .alergenos img {
-        width: 100%;
-        max-width: 100%;
-        /* Ajusta el tamaño máximo de la imagen */
-        height: auto;
-        /* Altura automática para mantener la proporción */
-    }
-
-
-    .alergenos h5 {
-        font-size: 30px;
-        font-family: Marker;
-        grid-column: 1 / -1;
-        /* Ocupa todas las columnas disponibles */
-        margin: 5px 0;
-        /* Espacio superior e inferior */
-    }
-
-    .localizacion .btn {
-        font-size: 24px;
-        /* Tamaño de fuente mediano */
-        margin-top: 55px;
-
-    }
-
-    .copyright {
-        font-size: 25px;
-    }
-
-
-
-
-}
-
 /* Media query LAPTOPS Y ESCRITORIOS */
 
 

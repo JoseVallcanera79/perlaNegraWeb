@@ -115,12 +115,12 @@ body {
     /* Opcional: hacer el precio en negrita */
 }
 
-.comentario{
+.comentario {
     display: block;
     font-size: 14px;
     font-style: italic;
     margin: -1em 2px 20px 20px;
- 
+
 }
 
 
@@ -247,6 +247,10 @@ footer {
     padding: 2px;
     text-align: center;
     margin-top: 30px;
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+    max-width: 100%;
+    /* Limita el ancho máximo del contenedor */
 
 
 }
@@ -255,6 +259,8 @@ footer {
     margin-top: 8px;
     color: rgb(21, 140, 187);
     font-weight: bold;
+    white-space: nowrap;
+    overflow: visible;
 
 }
 
@@ -396,13 +402,13 @@ footer {
 /* Reducir el tamaño TABLETS */
 
 @media (max-width: 992px) {
-    
-    .navbar-nav{
+
+    .navbar-nav {
         flex-wrap: wrap;
     }
-  
-    .nav-item{
-        margin: 0px ;
+
+    .nav-item {
+        margin: 0px;
     }
 
 
@@ -412,7 +418,7 @@ footer {
         padding: 12px;
     }
 
-    
+
 
 
 
@@ -464,6 +470,7 @@ footer {
         font-weight: 400;
 
     }
+
     .vinos {
         display: flex;
         justify-content: center;
@@ -472,11 +479,11 @@ footer {
         /* Centrar verticalmente */
         margin-top: 30px;
     }
-    
-    
-    
+
+
+
     .vinos h4 {
-    
+
         background-color: white;
         border-radius: 40px;
         width: 45%;
@@ -485,7 +492,7 @@ footer {
         text-align: center;
         /* Asegurarse de que el texto esté centrado */
         font-weight: 200;
-    
+
     }
 
     .texto {
@@ -518,15 +525,15 @@ footer {
     }
 
 
-    .comentario{
+    .comentario {
         display: block;
         font-size: 14px;
         font-style: italic;
         margin: -1em 2px 20px 20px;
-     
+
     }
 
-    .mensaje_cocktel{
+    .mensaje_cocktel {
         color: red;
         margin: 5% auto;
         text-align: center;
@@ -668,6 +675,7 @@ footer {
 
 
 /* Media query MOVIL---------- */
+
 @media (max-width: 576px) {
 
     /* Estilos para los elementos del menú desplegable */
@@ -686,7 +694,8 @@ footer {
 
 
     }
-    .mensaje_cocktel{
+
+    .mensaje_cocktel {
         color: red;
         margin: 5% auto;
         text-align: center;
@@ -706,12 +715,18 @@ footer {
         margin-left: 120px;
         /* Puedes ajustar este valor según sea necesario */
     }
+    
 
+
+    .copyright {
+        font-size: 20px; /* Reducir aún más el tamaño del texto para dispositivos móviles */
+        max-width: 100%; /* Reducir el ancho máximo del contenedor */
+        margin: auto; /* Centrar el contenedor */
+    }
 
     .copyright p {
-
-        font-size: 13px;
-
+        font-size: 9px; /* Reducir el tamaño del texto para dispositivos móviles */
+        white-space: inherit;
     }
 
     .icons i {
@@ -771,11 +786,11 @@ footer {
         /* Centrar verticalmente */
         margin-top: 30px;
     }
-    
-    
-    
+
+
+
     .vinos h4 {
-    
+
         background-color: white;
         border-radius: 40px;
         width: 30%;
@@ -784,7 +799,7 @@ footer {
         text-align: center;
         /* Asegurarse de que el texto esté centrado */
         font-weight: 200;
-    
+
     }
 
     .texto {
@@ -815,14 +830,15 @@ footer {
         /* Opcional: hacer el precio en negrita */
     }
 
-    .comentario{
+    .comentario {
         display: block;
         font-size: 14px;
         font-style: italic;
         margin: -1em 2px 20px 20px;
-     
+
     }
-    .mensaje_cocktel{
+
+    .mensaje_cocktel {
         color: red;
         margin: 5% auto;
         text-align: center;
@@ -855,15 +871,16 @@ footer {
 @media (min-width: 1024px) {
 
 
-    .navbar-nav{
+    .navbar-nav {
 
-      width: 100%;
-    }
-    .nav-item{
-     margin: 0px 30px;
+        width: 100%;
     }
 
-    .mensaje_cocktel{
+    .nav-item {
+        margin: 0px 30px;
+    }
+
+    .mensaje_cocktel {
         color: red;
         margin: 5% auto;
         text-align: center;
@@ -940,12 +957,12 @@ footer {
         /* Opcional: hacer el precio en negrita */
     }
 
-    .comentario{
+    .comentario {
         display: block;
         font-size: 14px;
         font-style: italic;
         margin: -1em 2px 20px 20px;
-     
+
     }
 
 

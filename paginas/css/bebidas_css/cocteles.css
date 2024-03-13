@@ -720,10 +720,15 @@ footer {
     }
 
 
+    .copyright {
+        font-size: 20px; /* Reducir aún más el tamaño del texto para dispositivos móviles */
+        max-width: 100%; /* Reducir el ancho máximo del contenedor */
+        margin: auto; /* Centrar el contenedor */
+    }
+
     .copyright p {
-
-        font-size: 13px;
-
+        font-size: 9px; /* Reducir el tamaño del texto para dispositivos móviles */
+        white-space: inherit;
     }
 
     .icons i {
