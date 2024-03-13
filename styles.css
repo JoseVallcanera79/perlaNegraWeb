@@ -150,14 +150,19 @@ button span {
     padding: 2px;
     text-align: center;
     margin-top: 30px;
-
-
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
 }
+
+
+
 
 .copyright p {
     margin-top: 8px;
     color: rgb(21, 140, 187);
     font-weight: bold;
+    white-space: nowrap;
+    overflow: visible;
 
 }
 
@@ -459,6 +464,18 @@ button span {
 }
 
 
+@media (max-width: 365px) {
+    .copyright {
+        font-size: 20px; /* Reducir aún más el tamaño del texto para dispositivos móviles */
+        max-width: 100%; /* Reducir el ancho máximo del contenedor */
+        margin: auto; /* Centrar el contenedor */
+    }
+
+    .copyright p {
+        font-size: 11px; /* Reducir el tamaño del texto para dispositivos móviles */
+        white-space: inherit;
+    }
+}
 
 
 
