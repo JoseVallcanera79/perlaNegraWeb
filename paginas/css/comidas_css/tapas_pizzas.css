@@ -14,14 +14,26 @@ body {
     /* Hacer que la imagen se desplace con el contenido de la página */
     background-attachment: fixed;
 
-    font-family: Marker Felt, fantasy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+    z-index: -1; /* Asegúrate de que el pseudo-elemento esté detrás de todo el contenido */
+}
+
 
 .carta {
     background-color: rgb(242, 228, 172, 65%);
     border-radius: 40px;
-    ;
+    
 }
 
 .desayuno {
@@ -76,9 +88,9 @@ body {
     align-items: center;
     /* Centra verticalmente el texto y el precio */
     padding: 8px;
-    font-family: cursive;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
+
 }
 
 .texto p span {
@@ -91,10 +103,6 @@ body {
 }
 
 
-
-
-
-
 .alergenos {
     text-align: center;
     background-color: rgb(255, 255, 255, 0.50);
@@ -102,9 +110,9 @@ body {
     padding: 8px;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     /* Define las columnas del grid */
-    gap: 10px;
+    gap: 35px;
     /* Espacio entre las imágenes */
 }
 
@@ -460,7 +468,6 @@ footer {
         padding: 20px;
         max-width: 300px;
         border-radius: 40px;
-        font-family: cursive;
         font-size: 28px;
         
     }
@@ -493,6 +500,17 @@ footer {
         display: inline-block;
 
     }
+    .texto p {
+        display: flex;
+        justify-content: space-between;
+        /* Espacio entre el texto y el precio */
+        align-items: center;
+        /* Centra verticalmente el texto y el precio */
+        padding: 8px;
+    
+        font-size: 18px;
+        font-weight: 700;
+    }
 
 
 
@@ -508,6 +526,11 @@ footer {
         box-shadow: none !important;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
+    }
+    
+    .copyright p {
+        font-size: 20px; /* Reducir el tamaño del texto para dispositivos móviles */
+        white-space: inherit;
     }
 
 }
@@ -559,8 +582,8 @@ footer {
         align-items: center;
         /* Centra verticalmente el texto y el precio */
         padding: 8px;
-        font-family: cursive;
-        font-size: 20px;
+    
+        font-size: 18px;
         font-weight: 700;
     }
 
@@ -802,7 +825,7 @@ footer {
 
 
     .modal-content {
-        font-family: cursive;
+        
         font-size: 28px;
         font-weight: bold;
         margin: 65% auto;
@@ -820,7 +843,6 @@ footer {
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
 
     }
 
@@ -946,7 +968,6 @@ footer {
         align-items: center;
         /* Centra verticalmente el texto y el precio */
         padding: 8px;
-        font-family: cursive;
         font-size: 30px;
         font-weight: 700;
     }
@@ -994,7 +1015,6 @@ footer {
 
     .modal-content {
         display: flex;
-        font-family: cursive;
         font-size: 28px;
         font-weight: bold;
         margin: 25% auto;
@@ -1023,7 +1043,6 @@ footer {
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
 
     }
 

@@ -4,7 +4,7 @@
 
 body {
     /* Establecer imagen de fondo */
-    background-image: url('/images/pasarela_mar.webp');
+    background-image:url('/images/pasarela_mar.webp');
     /* Ajustar tamaño de la imagen al 100% del alto y ancho del body */
     background-size: cover;
     /* Repetir la imagen en caso de que el tamaño del body sea mayor que el de la imagen */
@@ -13,8 +13,19 @@ body {
     background-position: center center;
     /* Hacer que la imagen se desplace con el contenido de la página */
     background-attachment: fixed;
-    font-family: Marker Felt, fantasy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
+body::before {
+    /* Pseudo-elemento para oscurecer la imagen */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Color de fondo oscuro con opacidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor para cambiar la opacidad */
 }
 
 .carousel-item img {
