@@ -23,10 +23,21 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 125%;
     /* Color de fondo oscuro con opacidad */
     background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor para cambiar la opacidad */
+    z-index: -1;
 }
+
+
+.logo img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin: 20px auto 10px auto;
+}
+
 
 .carousel-item img {
     border-radius: 40px;
@@ -85,8 +96,10 @@ footer {
 
 
 .navbar {
+    align-items: center;
     background-color: rgb(154, 191, 212);
     border-radius: 25px;
+    margin: 10px auto 20px auto;
 }
 
 .navbar-nav {

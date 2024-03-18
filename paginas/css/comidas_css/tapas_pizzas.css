@@ -280,6 +280,8 @@ footer {
 }
 
 
+
+
 .snip1566 {
     position: relative;
     display: inline-block;
@@ -410,6 +412,9 @@ footer {
     background-color: rgba(129, 146, 221, 0.1);
     /* Cambia el color de fondo al activo o al pasar el mouse */
 }
+
+
+
 
 
 
@@ -865,7 +870,11 @@ footer {
         /* Añadimos un margen derecho entre las imágenes para separarlas */
     }
 
-
+    
+  
+/* poner AQUI el codigo para las imagenes una 
+al lado de la otra */
+    
 
 
     .localizacion .btn {
@@ -889,7 +898,7 @@ footer {
     }
 
     .copyright p {
-        font-size: 9px; /* Reducir el tamaño del texto para dispositivos móviles */
+        font-size: 10px; /* Reducir el tamaño del texto para dispositivos móviles */
         white-space: inherit;
     }
 
@@ -1119,5 +1128,7 @@ footer {
         margin: 5px 0;
         /* Espacio superior e inferior */
     }
+
+
 
 }
