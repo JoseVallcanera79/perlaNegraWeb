@@ -112,9 +112,9 @@ body::before {
     padding: 8px;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     /* Define las columnas del grid */
-    gap: 35px;
+    gap: 10px;
     /* Espacio entre las imágenes */
 }
 
@@ -170,7 +170,7 @@ body::before {
 footer {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 40px;
     left: 0;
     width: 100%;

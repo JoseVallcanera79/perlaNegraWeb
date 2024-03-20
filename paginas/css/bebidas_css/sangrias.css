@@ -156,11 +156,12 @@ body::before {
 footer {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 40px;
     left: 0;
     width: 100%;
 }
+
 
 .localizacion,
 .icons {
@@ -699,6 +700,7 @@ footer {
     .snip1566 {
         margin-left: 120px;
         /* Puedes ajustar este valor según sea necesario */
+        
     }
 
 

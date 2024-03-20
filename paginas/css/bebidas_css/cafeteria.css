@@ -157,7 +157,7 @@ body::before {
 footer {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 40px;
     left: 0;
     width: 100%;

@@ -168,7 +168,7 @@ body::before {
 footer {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 40px;
     left: 0;
     width: 100%;
@@ -785,6 +785,7 @@ footer {
 
 /* Media query MOVIL---------- */
 @media (max-width: 576px) {
+
 
     /* Estilos para los elementos del menú desplegable */
     .navbar-nav .nav-link {

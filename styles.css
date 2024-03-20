@@ -23,7 +23,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 125%;
+    height: 130%;
     /* Color de fondo oscuro con opacidad */
     background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor para cambiar la opacidad */
     z-index: -1;
@@ -63,11 +63,12 @@ body::before {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 40px;
-    left: 0;
     width: 100%;
+    margin: auto;
 }
 
 .localizacion,
@@ -193,7 +194,7 @@ button span {
 
 
 
-.snip1566 {
+/* .snip1566 {
     position: relative;
     display: inline-block;
     margin-left: 39%;
@@ -206,7 +207,22 @@ button span {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 
+} */
+.snip1566 {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto; /* Centrar horizontalmente */
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 200px;
+    width: 100%;
+    color: #bbb;
+    font-size: 16px;
+    box-shadow: none !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
+
 
 .snip1566 *,
 .snip1566:before,
@@ -526,15 +542,6 @@ button span {
     }
 
 
-
-    .localizacion .btn {
-        font-size: 13px;
-        /* Tamaño de fuente más pequeño */
-        margin-top: 45px;
-
-    }
-    
-  
      .copyright{
         margin: auto;
      }
@@ -562,12 +569,6 @@ button span {
         font-size: 21px;
     }
 
-    .localizacion .btn {
-        font-size: 24px;
-        /* Tamaño de fuente mediano */
-        margin-top: 55px;
-
-    }
 
     .copyright {
         font-size: 25px;
@@ -586,4 +587,41 @@ button span {
         margin-top: 55px;
 
     }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 40px;
+        top: 40px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .snip1566 {
+        max-width: 200px;
+        width: 100%;
+        color: #bbb;
+        font-size: 16px;
+        box-shadow: none !important;
+        transform: translateZ(0);
+    }
+    
+    .copyright {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Ajusta según sea necesario */
+    }
+    
+    /* Otros estilos para .snip1566, .icons y .copyright si es necesario */
+    
 }
